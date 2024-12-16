@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <header>
+        <h1>EXPENSE TRACKER</h1>
+    </header>
+    <div class="flex1">
+    <div class="group">
+<div class="expense">
+<h3>Expenses</h3>
+<div class="flex">
+<div class="panel">
+<label for="expname">Expense Name-</label>
+<input type="text" name="name" id="expname"
+placeholder="Eg-food">
+</div>
+<div class="panel">
+    <label for="expname">Expense Amount-</label>
+    <input type="number" name="num" id="expnum" min="0"  placeholder="eg-1000">
+    
+</div>
+<button class="add">ADD</button>
+</div>
+</div>
+<div class="budget">
+    <h3>Budget</h3>
+    <div class="flex">
+    <div class="panel">
+        <label for="budget">Budget Amount-</label>
+        <input type="number" name="budget" id="budget"
+        placeholder="eg-10000">
+    </div>
+    <button class="set">Set Budget</button>
+    </div>
+
+</div>
+
+    </div>
+
+<div class="section">
+    <div class="total">
+    <div class="flex2">
+        <h4>Total Budget</h4>
+        <h4>Expenses</h4>
+        <h4>Balance</h4>
+    </div>
+    <div class="flex2">
+        <h5 id="budget-amt">0</h5>
+        <h5 id="expense-amt">0</h5>
+        <h5 id="balance">0</h5>
+    </div>
+    </div>
+    <div class="container">
+        <h3>Expense list</h3>
+        <ul id="list">
+            
+        </ul>
+    </div>
+    </div>
+    
+
+</div>
+
+    </div>
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
